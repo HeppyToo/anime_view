@@ -5,6 +5,7 @@ import AnimeCard, { AnimeProp } from '@/components/AnimeCard';
 const MAX_LIMIT = 8;
 
 export async function fetchAnime(page: number) {
+  // fetch request
   const response = await fetch(
     `https://shikimori.one/api/animes?page=${page}&limit=${MAX_LIMIT}&order=popularity`,
   );

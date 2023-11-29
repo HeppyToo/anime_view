@@ -1,6 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
-import { MotionDiv } from './Motion';
+import { MotionDiv } from "./Motion";
 
 const stagger = 0.25;
 
@@ -34,13 +34,13 @@ function AnimeCard({ anime, index }: Prop) {
       animate="visible"
       transition={{
         delay: index * stagger,
-        ease: 'easeInOut',
+        ease: "easeInOut",
         duration: 0.5,
       }}
       viewport={{ amount: 0 }}
       className="max-w-sm rounded relative w-full"
     >
-      <div className="relative w-full h-[50vh]">
+      <div className="relative w-full h-[37vh]">
         <Image
           src={`https://shikimori.one${anime.image.original}`}
           alt={anime.name}

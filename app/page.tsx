@@ -1,6 +1,6 @@
-import { fetchAnime } from './action';
+import { fetchAnime } from "./action";
 
-import LoadMore from '../components/LoadMore';
+import LoadMore from "../components/LoadMore";
 
 async function Home() {
   const data = await fetchAnime(1);
